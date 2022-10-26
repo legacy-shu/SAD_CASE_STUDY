@@ -1,0 +1,18 @@
+{
+  "name": "sad_case_study_backend",
+  "version": "1.0.0",
+  "description": "Software Engineering - Software Architecture And Design - Case Study",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "Wooram Jung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,11 +1,13 @@
 import * as React from 'react';
 import Nav from './components/Nav';
 import Login from './components/Login';
+import BasicCard from './components/Card';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Button } from '@mui/material';
 import { useEffect, useState } from 'react';
 import moment from 'moment/moment.js';
-import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 function App() {
   const [sessions, setSessions] = useState([]);
@@ -29,20 +31,19 @@ function App() {
         ></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
-      <div>
+      <Box sx={{ width: '100%' }}>
         <h1>{moment().format('YYYY-MM-DD')}</h1>
-        <ul>
+        <Grid container spacing={2}>
           {sessions.map((session) => (
-            <li key={session._id.$oid}>
-              <h2>
-                <Link to={`/session/${session._id.$oid}`}>
-                  {session.activity_name}
-                </Link>
-              </h2>
-            </li>
+            <BasicCard
+              activity_name={session.activity_name}
+              time={session.time}
+              location={session.location}
+              staff={session['staff-members'][0].name}
+            ></BasicCard>
           ))}
-        </ul>
-      </div>
+        </Grid>
+      </Box>
     </Router>
   );
 }

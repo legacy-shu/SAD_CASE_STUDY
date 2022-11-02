@@ -1,9 +1,17 @@
 import express from 'express';
+import attendanceRouter from './router/attendance.js';
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("SAD Attendance will be created")
-})
+app.use('/sessions', attendanceRouter);
+
+app.use((req, res, next) => {
+  res.sendStatus(404);
+});
+
+app.use((error, req, res, next) => {
+  console.error(error);
+  res.sendStatus(500);
+});
 
 app.listen(8080);

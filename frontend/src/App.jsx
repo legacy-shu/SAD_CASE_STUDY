@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Nav from './components/Nav';
 import Login from './components/Login';
-import BasicCard from './components/Card';
+import { MUICard } from './components/Card';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Button } from '@mui/material';
 import { useEffect, useState } from 'react';
@@ -33,14 +33,15 @@ function App() {
       </Routes>
       <Box sx={{ width: '100%' }}>
         <h1>{moment().format('YYYY-MM-DD')}</h1>
-        <Grid container spacing={2}>
-          {sessions.map((session) => (
-            <BasicCard
+        <Grid container spacing={0.5}>
+          {sessions.map((session, index) => (
+            <MUICard
               activity_name={session.activity_name}
               time={session.time}
               location={session.location}
               staff={session['staff-members'][0].name}
-            ></BasicCard>
+              img={`https://picsum.photos/200/300?random=${index}`}
+            ></MUICard>
           ))}
         </Grid>
       </Box>

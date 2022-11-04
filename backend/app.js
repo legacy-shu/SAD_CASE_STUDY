@@ -2,7 +2,7 @@ import express from 'express';
 import attendanceRouter from './router/attendance.js';
 
 const app = express();
-
+app.use(express.json());
 app.use('/sessions', attendanceRouter);
 
 app.use((req, res, next) => {

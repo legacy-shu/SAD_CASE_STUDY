@@ -1,4 +1,5 @@
-let timetable = [
+import Passcode from './passcode.js';
+export let timetable = [
   {
     _id: {
       $oid: '6362805a168825fa2bb989c3',
@@ -9,7 +10,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -83,7 +85,7 @@ let timetable = [
         attendance: false,
       },
     ],
-    isOpened: true,
+    isOpened: false,
   },
   {
     _id: {
@@ -95,7 +97,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -181,7 +184,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -267,7 +271,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -353,7 +358,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -439,7 +445,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -525,7 +532,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -611,7 +619,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -697,7 +706,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -783,7 +793,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -869,7 +880,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -955,7 +967,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1041,7 +1054,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1127,7 +1141,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1213,7 +1228,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1299,7 +1315,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1385,7 +1402,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1471,7 +1489,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1557,7 +1576,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1643,7 +1663,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1729,7 +1750,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1815,7 +1837,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1901,7 +1924,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -1987,7 +2011,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2073,7 +2098,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2159,7 +2185,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2245,7 +2272,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2331,7 +2359,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2417,7 +2446,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2503,7 +2533,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2589,7 +2620,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2675,7 +2707,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2761,7 +2794,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2847,7 +2881,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -2933,7 +2968,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3019,7 +3055,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3105,7 +3142,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3191,7 +3229,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3277,7 +3316,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3363,7 +3403,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3449,7 +3490,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3535,7 +3577,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3621,7 +3664,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3707,7 +3751,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3793,7 +3838,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9135(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3879,7 +3925,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -3965,7 +4012,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4051,7 +4099,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4137,7 +4186,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4223,7 +4273,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4309,7 +4360,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4395,7 +4447,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4481,7 +4534,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4567,7 +4621,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4653,7 +4708,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4739,7 +4795,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4825,7 +4882,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4911,7 +4969,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -4997,7 +5056,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5083,7 +5143,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5169,7 +5230,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5255,7 +5317,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5341,7 +5404,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5427,7 +5491,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5513,7 +5578,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5599,7 +5665,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5685,7 +5752,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5771,7 +5839,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5857,7 +5926,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -5943,7 +6013,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6029,7 +6100,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6115,7 +6187,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6201,7 +6274,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6287,7 +6361,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6373,7 +6448,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6459,7 +6535,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6545,7 +6622,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6631,7 +6709,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6717,7 +6796,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6803,7 +6883,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6889,7 +6970,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -6975,7 +7057,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7061,7 +7144,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7147,7 +7231,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7233,7 +7318,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7319,7 +7405,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7405,7 +7492,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7491,7 +7579,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7577,7 +7666,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7663,7 +7753,8 @@ let timetable = [
     module_code: '55-608221-SEM1-A',
     module_description: 'SOFTWARE ARCHITECTURE AND DESIGN',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7749,7 +7840,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7835,7 +7927,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -7921,7 +8014,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8007,7 +8101,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8093,7 +8188,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8179,7 +8275,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8265,7 +8362,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8351,7 +8449,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8437,7 +8536,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8523,7 +8623,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8609,7 +8710,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8695,7 +8797,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8781,7 +8884,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8867,7 +8971,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -8953,7 +9058,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9039,7 +9145,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9125,7 +9232,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9211,7 +9319,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9297,7 +9406,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9383,7 +9493,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9469,7 +9580,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9555,7 +9667,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9641,7 +9754,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9727,7 +9841,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9813,7 +9928,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9899,7 +10015,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -9985,7 +10102,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10071,7 +10189,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10157,7 +10276,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10243,7 +10363,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10329,7 +10450,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10415,7 +10537,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10501,7 +10624,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10587,7 +10711,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10673,7 +10798,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10759,7 +10885,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10845,7 +10972,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -10931,7 +11059,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11017,7 +11146,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11103,7 +11233,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11189,7 +11320,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11275,7 +11407,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11361,7 +11494,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11447,7 +11581,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11533,7 +11668,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9130(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11619,7 +11755,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11705,7 +11842,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11791,7 +11929,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11877,7 +12016,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -11963,7 +12103,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12049,7 +12190,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12135,7 +12277,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12221,7 +12364,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12307,7 +12451,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12393,7 +12538,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12479,7 +12625,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12565,7 +12712,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12651,7 +12799,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12737,7 +12886,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12823,7 +12973,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12909,7 +13060,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -12995,7 +13147,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13081,7 +13234,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13167,7 +13321,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13253,7 +13408,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13339,7 +13495,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13425,7 +13582,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13511,7 +13669,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13597,7 +13756,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13683,7 +13843,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13769,7 +13930,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13855,7 +14017,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -13941,7 +14104,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14027,7 +14191,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14113,7 +14278,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14199,7 +14365,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14285,7 +14452,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14371,7 +14539,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14457,7 +14626,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14543,7 +14713,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14629,7 +14800,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14715,7 +14887,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14801,7 +14974,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14887,7 +15061,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -14973,7 +15148,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -15059,7 +15235,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -15145,7 +15322,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -15231,7 +15409,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -15317,7 +15496,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -15403,7 +15583,8 @@ let timetable = [
     module_code: '55-382934-SEM1-A',
     module_description: 'Human Factor',
     location: 'Cantor-9030(city)',
-    'staff-members': [
+    passcode: '',
+    staff_members: [
       {
         name: 'James',
         id: 't5032912',
@@ -15485,20 +15666,17 @@ export async function getAllSessions() {
   return timetable;
 }
 
-export async function openSession(id) {
-  const session = timetable.filter((t) => t._id.$oid === id);
-  if (session) {
-    session[0].isOpened = true;
+export async function openSession(id, openedSession) {
+  const index = timetable.findIndex((t) => t._id.$oid === id);
+  if (index !== -1) {
+    timetable[index].isOpened = openedSession;
+    timetable[index].passcode = null;
+    if (openedSession) {
+      timetable[index].passcode = Passcode.generateCode();
+    }
+    console.log(timetable[index]);
   }
-  return session;
-}
-
-export async function closeSession(id) {
-  const session = timetable.filter((t) => t._id.$oid === id);
-  if (session) {
-    session[0].isOpened = false;
-  }
-  return session;
+  return timetable[index];
 }
 
 export async function getSessions(date) {

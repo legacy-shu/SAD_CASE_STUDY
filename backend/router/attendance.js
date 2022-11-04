@@ -6,13 +6,16 @@ const router = express.Router();
 //GET
 //router.get('/', attendanceController.getAllSessions);
 
-//GET /:date
+//GET /sessions/
 router.get('/', attendanceController.getSessions);
 
-//GET /session/:id
+//GET /sessions/:id
 router.get('/:id', attendanceController.openSession);
 
-// //PUT /:date
-// router.put('/:date', attendanceController.updateSession);
+//POST /sessions/
+router.post('/', attendanceController.registerAttendance);
+
+// //PUT /sessions/
+// router.put('/', attendanceController.updateSession);
 
 export default router;

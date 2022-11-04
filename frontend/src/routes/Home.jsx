@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 import MUICard from '../components/Card';
-import { Container, Grid } from '@mui/material';
-import moment from 'moment';
+import { Container, Grid, Box } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [sessions, setSessions] = useState([]);
@@ -18,16 +18,23 @@ const Home = () => {
 
   return (
     <Container fixed>
-      <Nav></Nav>
-      <h1>{moment().format('YYYY-MM-DD')}</h1>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container>
+        <Nav></Nav>
         {sessions.map((session) => (
-          <MUICard
-            key={session._id.$oid}
-            session={session}
-            link={`/sessions/${session._id.$oid}`}
-            size={'470px'}
-          ></MUICard>
+          <Grid item xs={12} sm={6}>
+            <Box p={1}>
+              <Link
+                style={{ textDecoration: 'none' }}
+                to={`/sessions/${session._id.$oid}`}
+              >
+                <MUICard
+                  key={session._id.$oid}
+                  session={session}
+                  size={'470px'}
+                ></MUICard>
+              </Link>
+            </Box>
+          </Grid>
         ))}
       </Grid>
     </Container>

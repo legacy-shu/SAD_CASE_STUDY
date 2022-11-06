@@ -10,7 +10,6 @@ const Session = ({ attendanceService }) => {
 
   const openSession = (data) => {
     setPasscode(data.passcode);
-    console.log(data);
   };
 
   const getData = async () => {

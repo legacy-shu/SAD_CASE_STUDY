@@ -28,7 +28,11 @@ function App({ attendanceService, authService }) {
 
   return (
     <Container fixed>
-      <Nav authService={authService} userRole={user}></Nav>
+      <Nav
+        attendanceService={attendanceService}
+        authService={authService}
+        user={user}
+      ></Nav>
       <Router>
         <Routes>
           <Route path="/" element={<Rolebased user={user} />}></Route>
@@ -55,7 +59,10 @@ function App({ attendanceService, authService }) {
             path="/attendance"
             element={
               <Protected user={user}>
-                <StudentBoard />
+                <StudentBoard
+                  user={user}
+                  attendanceService={attendanceService}
+                />
               </Protected>
             }
           ></Route>

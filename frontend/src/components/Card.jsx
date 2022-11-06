@@ -31,7 +31,7 @@ const MUICard = ({
       <CardMedia
         component="img"
         height="140"
-        image={`https://picsum.photos/200/300?random=${session._id.$oid}`}
+        image={`https://picsum.photos/200/300?random=${session._id}`}
         alt="unsplash image"
       />
       <CardContent>

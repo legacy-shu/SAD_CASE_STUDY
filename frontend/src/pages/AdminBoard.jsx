@@ -8,6 +8,8 @@ const AdminBoard = ({ attendanceService }) => {
 
   const getSessions = async () => {
     const data = await attendanceService.getSessions();
+    data.map((s) => console.log(s._id));
+
     setSessions(data);
   };
 
@@ -19,14 +21,14 @@ const AdminBoard = ({ attendanceService }) => {
     <Container fixed>
       <Grid container>
         {sessions.map((session) => (
-          <Grid item xs={12} sm={6} key={session._id.$oid}>
+          <Grid item xs={12} sm={6} key={session._id}>
             <Box p={1}>
               <Link
                 style={{ textDecoration: 'none' }}
-                to={`/sessions/${session._id.$oid}`}
+                to={`/sessions/${session._id}`}
               >
                 <MUICard
-                  key={session._id.$oid}
+                  key={session._id}
                   session={session}
                   size={'470px'}
                 ></MUICard>

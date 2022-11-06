@@ -1,94 +1,28 @@
-let users = [
+import { Schema, model, ObjectId } from 'mongoose';
+const UserSchema = new Schema(
   {
-    name: 'James',
-    id: 't5032912',
-    email: 't5032912@uops.ac.uk',
-    role: 'admin',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
+    _id: ObjectId,
+    name: String,
+    id: String,
+    email: String,
+    role: String,
+    password: String,
   },
-  {
-    name: 'Khan',
-    id: 't5032913',
-    email: 't5032913@uops.ac.uk',
-    role: 'admin',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'sam',
-    id: 'c1032911',
-    email: 'c1032911@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'gam',
-    id: 'c1032912',
-    email: 'c1032912@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'tam',
-    id: 'c1032913',
-    email: 'c1032913@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'bam',
-    id: 'c1032914',
-    email: 'c1032914@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'nam',
-    id: 'c1032915',
-    email: 'c1032915@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'lam',
-    id: 'c1032916',
-    email: 'c1032916@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'kam',
-    id: 'c1032917',
-    email: 'c1032917@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'ham',
-    id: 'c1032918',
-    email: 'c1032918@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'mam',
-    id: 'c1032919',
-    email: 'c1032919@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-  {
-    name: 'ram',
-    id: 'c1032920',
-    email: 'c1032920@uops.ac.uk',
-    role: 'student',
-    password: '$2a$12$YTJmB3/7uItElInKUjkie.XEy8MCDtn7DIel7ZASgcDYsFIIKoSL6',
-  },
-];
-
+  { collection: 'users' }
+);
+const User = model('user', UserSchema);
 export async function findByEmail(email) {
-  return users.find((user) => user.email === email);
+  try {
+    return await User.findOne({ email: email });
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 export async function findById(id) {
-  return users.find((user) => user.id === id);
+  try {
+    return await User.findOne({ id: id });
+  } catch (error) {
+    console.error(error);
+  }
 }

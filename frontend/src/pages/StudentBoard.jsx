@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   Card,
@@ -9,59 +9,74 @@ import {
   Box,
   Button,
 } from '@mui/material';
-const Register = () => {
-  const [session, setSession] = useState();
-  const getData = async () => {};
-
-  useEffect(() => {
-    getData();
-  }, []);
+const Register = ({ attendanceService, user }) => {
+  const [session, setSession] = useState({});
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const registered = await attendanceService.registerAttendance(
+      data.get('passcode'),
+      user.email
+    );
+    setSession(registered);
+  };
 
   return (
     <Container fixed>
-      <Box
-        sx={{ m: 5, flexDirection: 'column' }}
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <TextField
-          fullWidth
-          label="Enter Passcode"
-          inputProps={{ min: 0, style: { textAlign: 'center' } }}
-        />
-        <Button fullWidth variant="outlined" sx={{ mt: 3, mb: 2 }}>
-          Register your attendance
-        </Button>
-      </Box>
+      {!session?.students?.filter((s) => s.email === user.email)?.[0]
+        ?.attendance ? (
+        <Box
+          component="form"
+          onSubmit={handleSubmit}
+          sx={{ m: 5, flexDirection: 'column' }}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <TextField
+            name="passcode"
+            autoFocus
+            fullWidth
+            label="Enter Passcode"
+            inputProps={{ min: 0, style: { textAlign: 'center' } }}
+          />
+          <Button type="submit" variant="outlined" sx={{ mt: 3, mb: 2 }}>
+            Register your attendance
+          </Button>
+        </Box>
+      ) : (
+        <Typography variant="h5" component="div">
+          {`${session?.students?.filter((s) => s.email === user.email)?.[0]?.name} has been registered!`}
+        </Typography>
+      )}
       {session ? (
         <Card>
           <CardMedia
             component="img"
             height="140"
-            image={`https://picsum.photos/200/300?random=${session._id.$oid}`}
+            image={`https://picsum.photos/200/300?random=${session?._id}`}
             alt="unsplash image"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {session.date}
+              {session?.date}
             </Typography>
             <Typography gutterBottom variant="h6" component="div">
-              {session.activity_name}
+              {session?.activity_name}
             </Typography>
             <Typography gutterBottom variant="body" component="div">
-              {session.time}
+              {session?.time}
             </Typography>
             <Typography gutterBottom variant="body" component="div">
-              {session.location}
+              {session?.location}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {session.staff_members[0].name}
+              {session?.staff_members?.[0]?.name}
             </Typography>
             <Typography variant="body" color="text.secondary">
-              {session.isOpened}
+              {session?.isOpened}
             </Typography>
-          </CardContent>{' '}
+          </CardContent>
         </Card>
       ) : null}
     </Container>

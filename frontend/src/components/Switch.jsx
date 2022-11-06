@@ -3,17 +3,20 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const MuiSwitch = ({ openSession, attendanceService }) => {
+  
   const { id } = useParams();
   const [checked, setChecked] = useState(false);
-  const getData = async () => {
+  
+  const startSession = async () => {
     const data = await attendanceService.openSession(id, !checked)
     openSession(data);
   };
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
-    getData();
+    startSession();
   };
+
   return (
     <Box>
       <FormControlLabel

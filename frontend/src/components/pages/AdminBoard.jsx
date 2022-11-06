@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import MUICard from '../components/Card';
+import MUICard from '../Card';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Box } from '@mui/material';
 
 const AdminBoard = ({ attendanceService }) => {
   const [sessions, setSessions] = useState([]);
 
-  const getSessions = async () => {
-    const data = await attendanceService.getSessions();
-    data.map((s) => console.log(s._id));
-
-    setSessions(data);
-  };
-
   useEffect(() => {
-    getSessions();
+    async function fetchData() {
+      const data = await attendanceService.getSessions();
+      setSessions(data);
+    }
+    fetchData();
   }, []);
 
   return (

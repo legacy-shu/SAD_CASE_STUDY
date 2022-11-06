@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Tooltip from '@mui/material/Tooltip';
 import AdbIcon from '@mui/icons-material/School';
@@ -12,11 +11,9 @@ import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import AppRegistrationOutlinedIcon from '@mui/icons-material/AppRegistrationOutlined';
 import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
 
-function ResponsiveAppBar({ attendanceService, authService, user }) {
+function ResponsiveAppBar({ authService, user }) {
   const handleLogout = async () => {
-    console.log('logout');
     await authService.logout();
-    //await attendanceService.openSesion();
     window.location.href = '/';
   };
 
@@ -42,23 +39,7 @@ function ResponsiveAppBar({ attendanceService, authService, user }) {
           >
             UoPS Attendance
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <Menu
-              id="menu-appbar"
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            ></Menu>
-          </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}></Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h6"

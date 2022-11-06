@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AdminBoard from './pages/AdminBoard';
-import Login from './pages/Login';
-import AdminDetail from './pages/AdminDetail';
-import StudentBoard from './pages/StudentBoard';
+import AdminBoard from './components/pages/AdminBoard';
+import Login from './components/pages/Login';
+import AdminDetail from './components/pages/AdminDetail';
+import StudentBoard from './components/pages/StudentBoard';
 import Nav from './components/Nav';
 import { Container } from '@mui/system';
 import { useState, useEffect } from 'react';
@@ -13,17 +13,16 @@ import Authcontext from './components/protected/Authcontext';
 function App({ attendanceService, authService }) {
   const [user, setUser] = useState(null);
 
-  const authCheck = async () => {
-    const user = await authService.me();
-    setUser(user);
-  };
-
   const handleLogin = (user) => {
     setUser(user);
   };
 
   useEffect(() => {
-    authCheck();
+    async function fetchData() {
+      const user = await authService.me();
+      setUser(user);
+    }
+    fetchData();
   }, []);
 
   return (

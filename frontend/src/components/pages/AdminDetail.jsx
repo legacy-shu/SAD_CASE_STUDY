@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import MUICard from '../components/Card';
+import MUICard from '../Card';
 import { Container } from '@mui/material';
 
 const Session = ({ attendanceService }) => {
@@ -12,13 +12,12 @@ const Session = ({ attendanceService }) => {
     setPasscode(data.passcode);
   };
 
-  const getData = async () => {
-    const data = await attendanceService.getSession(id);
-    setSession(data);
-  };
-
   useEffect(() => {
-    getData();
+    async function fetchData() {
+      const data = await attendanceService.getSession(id);
+      setSession(data);
+    }
+    fetchData();
   }, []);
 
   return (

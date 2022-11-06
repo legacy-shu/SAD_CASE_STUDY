@@ -10,7 +10,9 @@ import {
   Button,
 } from '@mui/material';
 const Register = ({ attendanceService, user }) => {
+  
   const [session, setSession] = useState({});
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);

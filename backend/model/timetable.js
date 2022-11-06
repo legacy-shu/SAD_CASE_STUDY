@@ -15674,7 +15674,6 @@ export async function openSession(id, openedSession) {
     if (openedSession) {
       timetable[index].passcode = Passcode.generateCode();
     }
-    console.log(timetable[index]);
   }
   return timetable[index];
 }

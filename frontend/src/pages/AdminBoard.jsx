@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import Nav from '../components/Nav';
 import MUICard from '../components/Card';
-import { Container, Grid, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { Container, Grid, Box } from '@mui/material';
 
-const Home = () => {
+const AdminBoard = ({ attendanceService }) => {
   const [sessions, setSessions] = useState([]);
 
-  const getData = async () => {
-    const data = await (await fetch('/sessions')).json();
+  const getSessions = async () => {
+    const data = await attendanceService.getSessions();
     setSessions(data);
   };
 
   useEffect(() => {
-    getData();
+    getSessions();
   }, []);
 
   return (
     <Container fixed>
       <Grid container>
-        <Nav></Nav>
         {sessions.map((session) => (
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} key={session._id.$oid}>
             <Box p={1}>
               <Link
                 style={{ textDecoration: 'none' }}
@@ -41,4 +39,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AdminBoard;

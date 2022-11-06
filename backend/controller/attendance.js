@@ -31,11 +31,11 @@ export async function openSession(req, res, next) {
 }
 
 export async function registerAttendance(req, res, next) {
-  const { passcode, id } = req.body;
+  const { passcode, email } = req.body;
   const data = await timetable.getSessions(moment().format('YYYY-MM-DD'));
   const index = data.findIndex((d) => d.passcode === passcode && d.isOpened);
   if (index !== -1) {
-    const studentIndex = data[index].students.findIndex((s) => s.id === id);
+    const studentIndex = data[index].students.findIndex((s) => s.email === email);
     data[index].students[studentIndex].attendance = true;
     res.status(200).json(data[index]);
   } else {

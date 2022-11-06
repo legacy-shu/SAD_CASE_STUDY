@@ -2,13 +2,11 @@ import { Box, FormControlLabel, Switch } from '@mui/material';
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const MuiSwitch = ({ openSession }) => {
+const MuiSwitch = ({ openSession, attendanceService }) => {
   const { id } = useParams();
   const [checked, setChecked] = useState(false);
   const getData = async () => {
-    const data = await (
-      await fetch(`/sessions/${id}?openSession=${!checked}`)
-    ).json();
+    const data = await attendanceService.openSession(id, !checked)
     openSession(data);
   };
 

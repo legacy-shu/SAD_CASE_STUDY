@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Nav from '../components/Nav';
 import MUICard from '../components/Card';
 import { Container } from '@mui/material';
 
-const Session = () => {
+const Session = ({ attendanceService }) => {
   const { id } = useParams();
   const [session, setSession] = useState();
   const [passcode, setPasscode] = useState();
 
   const openSession = (data) => {
     setPasscode(data.passcode);
+    console.log(data);
   };
 
   const getData = async () => {
-    const data = await (await fetch(`/sessions/${id}`)).json();
-    console.log(data);
+    const data = await attendanceService.getSession(id);
     setSession(data);
   };
 
@@ -25,13 +24,13 @@ const Session = () => {
 
   return (
     <Container fixed>
-      <Nav></Nav>
       {session ? (
         <MUICard
           session={session}
           openedSession={true}
           openSession={openSession}
           passcode={passcode}
+          attendanceService={attendanceService}
         ></MUICard>
       ) : null}
     </Container>

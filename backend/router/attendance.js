@@ -1,21 +1,32 @@
 import express from 'express';
+import { body } from 'express-validator';
 import * as attendanceController from '../controller/attendance.js';
+import { isAuth } from '../middleware/auth.js';
+import { validate } from '../middleware/validator.js';
 
 const router = express.Router();
 
-//GET
-//router.get('/', attendanceController.getAllSessions);
+//validation
+//sanitization
+//Contract Testing : Client-Server
+const validateRegister = [
+  body('passcode')
+    .trim()
+    .isLength({ min: 4, max: 4 })
+    .withMessage('The code must be 4 characters'),
+  validate,
+  body('email').isEmail().normalizeEmail().withMessage('Invalid email'),
+  validate,
+];
 
-//GET /sessions/
+router.get('/all', attendanceController.getAllSessions);
+
 router.get('/', attendanceController.getSessions);
 
-//GET /sessions/:id
 router.get('/:id', attendanceController.openSession);
 
-//POST /sessions/
-router.post('/', attendanceController.registerAttendance);
+router.post('/', validateRegister, attendanceController.registerAttendance);
 
-// //PUT /sessions/
 // router.put('/', attendanceController.updateSession);
 
 export default router;

@@ -1,5 +1,4 @@
 import {
-  Box,
   Card,
   CardContent,
   Typography,
@@ -8,12 +7,23 @@ import {
 } from '@mui/material';
 import Switch from './Switch';
 
-const MUICard = ({session, openedSession, openSession, passcode }) => {
+const MUICard = ({
+  session,
+  openedSession,
+  openSession,
+  passcode,
+  attendanceService,
+}) => {
   return (
     <Card>
       {openedSession ? (
         <CardHeader
-          avatar={<Switch openSession={openSession} />}
+          avatar={
+            <Switch
+              openSession={openSession}
+              attendanceService={attendanceService}
+            />
+          }
           title={passcode ? `passcode : ${passcode}` : null}
           titleTypographyProps={{ variant: 'h5', color: 'red' }}
         ></CardHeader>

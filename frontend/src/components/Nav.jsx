@@ -6,34 +6,17 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/School';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import AppRegistrationOutlinedIcon from '@mui/icons-material/AppRegistrationOutlined';
 import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
-const pages = [];
-const settings = ['Logout'];
 
-function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+function ResponsiveAppBar({ authService, userRole }) {
+  const handleLogout = async () => {
+    console.log('logout');
+    await authService.logout();
+    window.location.href = '/';
   };
 
   return (
@@ -61,7 +44,6 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <Menu
               id="menu-appbar"
-              anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
@@ -71,18 +53,10 @@ function ResponsiveAppBar() {
                 vertical: 'top',
                 horizontal: 'left',
               }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            ></Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
@@ -103,34 +77,29 @@ function ResponsiveAppBar() {
           >
             UoPS Attendance
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}></Box>
           <Box sx={{ p: 0 }}>
-            <Tooltip title="Create Report">
-              <IconButton color="inherit">
-                <AssessmentOutlinedIcon fontSize="large" />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Edit/Register Attendance">
-              <IconButton color="inherit">
-                <AppRegistrationOutlinedIcon fontSize="large" />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Logout">
-              <IconButton color="inherit">
-                <ExitToAppOutlinedIcon fontSize="large" />
-              </IconButton>
-            </Tooltip>
+            {userRole?.role === 'admin' ? (
+              <>
+                <Tooltip title="Create Report">
+                  <IconButton color="inherit">
+                    <AssessmentOutlinedIcon fontSize="large" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="Edit/Register Attendance">
+                  <IconButton color="inherit">
+                    <AppRegistrationOutlinedIcon fontSize="large" />
+                  </IconButton>
+                </Tooltip>
+              </>
+            ) : null}
+            {userRole ? (
+              <Tooltip title="Logout">
+                <IconButton onClick={handleLogout} color="inherit">
+                  <ExitToAppOutlinedIcon fontSize="large" />
+                </IconButton>
+              </Tooltip>
+            ) : null}
           </Box>
         </Toolbar>
       </Container>

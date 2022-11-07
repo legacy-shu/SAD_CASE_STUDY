@@ -24,7 +24,7 @@ const MUICard = ({
               attendanceService={attendanceService}
             />
           }
-          title={passcode ? `passcode : ${passcode}` : null}
+          title={passcode ? `PASSCODE : ${passcode}` : null}
           titleTypographyProps={{ variant: 'h5', color: 'red' }}
         ></CardHeader>
       ) : null}

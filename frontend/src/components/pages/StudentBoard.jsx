@@ -9,10 +9,11 @@ import {
   Box,
   Button,
 } from '@mui/material';
+import { useEffect } from 'react';
+
 const Register = ({ attendanceService, user }) => {
-  
   const [session, setSession] = useState({});
-  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -20,8 +21,18 @@ const Register = ({ attendanceService, user }) => {
       data.get('passcode'),
       user.email
     );
-    setSession(registered);
+    if (registered) {
+      setSession(registered);
+    }
   };
+
+  useEffect(() => {
+    async function fetchData() {
+      const data = await attendanceService.getCurrentSession();
+      setSession(data);
+    }
+    fetchData();
+  }, []);
 
   return (
     <Container fixed>
@@ -48,7 +59,9 @@ const Register = ({ attendanceService, user }) => {
         </Box>
       ) : (
         <Typography variant="h5" component="div">
-          {`${session?.students?.filter((s) => s.email === user.email)?.[0]?.name} has been registered!`}
+          {`${
+            session?.students?.filter((s) => s.email === user.email)?.[0]?.name
+          } has been registered!`}
         </Typography>
       )}
       {session ? (

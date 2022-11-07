@@ -12,7 +12,6 @@ export async function getOpenedSession(req, res, next) {
 export async function registerAttendance(req, res, next) {
   const { passcode, email } = req.body;
   const data = await timetable.registerAttendance(passcode, email);
-  console.log(data);
   if (data) {
     res.status(200).json(data);
   } else {

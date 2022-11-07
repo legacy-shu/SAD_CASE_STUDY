@@ -1,5 +1,7 @@
 import Passcode from './passcode.js';
 import { Schema, model, ObjectId } from 'mongoose';
+import moment from 'moment/moment.js';
+
 const TimeTableSchema = new Schema(
   {
     _id: ObjectId,
@@ -32,49 +34,74 @@ const TimeTableSchema = new Schema(
 const timetable = model('timetable', TimeTableSchema);
 
 export async function getAllSessions() {
-  return await timetable.find({});
+  try {
+    return await timetable.find({});
+  } catch (error) {
+    console.error(error);
+  }
 }
 export async function getSession(id) {
-  return await timetable.findById(id);
+  try {
+    return await timetable.findById(id);
+  } catch (error) {
+    console.error(error);
+  }
 }
 export async function getOpenedSession() {
-  return await timetable.findOne({ isOpened: true });
+  const date = moment().format('YYYY-MM-DD')
+  try {
+    return await timetable.findOne({ date:date, isOpened: true });
+  } catch (error) {
+    console.error(error);
+  }
 }
 export async function getSessions(date) {
-  return await timetable.find({ date: date });
+  try {
+    return await timetable.find({ date: date });
+  } catch (error) {
+    console.error(error);
+  }
 }
 export async function openSession(id, openedSession) {
-  let session;
-  if (openedSession) {
-    session = await timetable.findByIdAndUpdate(
-      id,
-      {
-        isOpened: true,
-        passcode: Passcode.generateCode(),
-      },
-      { new: true }
-    );
-  } else {
-    session = await timetable.findOneAndUpdate(
-      { isOpened: true },
-      {
-        isOpened: false,
-        passcode: null,
-      },
-      { new: true }
-    );
+  try {
+    let session;
+    if (openedSession) {
+      session = await timetable.findByIdAndUpdate(
+        id,
+        {
+          isOpened: true,
+          passcode: Passcode.generateCode(),
+        },
+        { new: true }
+      );
+    } else {
+      session = await timetable.findByIdAndUpdate(
+        id,
+        {
+          isOpened: false,
+          passcode: null,
+        },
+        { new: true }
+      );
+    }
+    return session;
+  } catch (error) {
+    console.error(error);
   }
-  return session;
 }
 export async function registerAttendance(passcode, email) {
-  const session = await timetable.findOneAndUpdate(
-    { passcode: passcode, 'students.email': email },
-    {
-      $set: {
-        'students.$.attendance': true,
+  try {
+    const session = await timetable.findOneAndUpdate(
+      { passcode: passcode, 'students.email': email },
+      {
+        $set: {
+          'students.$.attendance': true,
+        },
       },
-    },
-    { new: true }
-  );
-  return session;
+      { new: true }
+    );
+    return session;
+  } catch (error) {
+    console.error(error);
+  }
 }

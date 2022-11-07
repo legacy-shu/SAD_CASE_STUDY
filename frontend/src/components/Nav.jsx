@@ -9,16 +9,21 @@ import Tooltip from '@mui/material/Tooltip';
 import AdbIcon from '@mui/icons-material/School';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import AppRegistrationOutlinedIcon from '@mui/icons-material/AppRegistrationOutlined';
-import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
+import FullScreenDialog from './FullScreenDialog';
 
 function ResponsiveAppBar({ authService, user }) {
+  const [open, setOpen] = React.useState(false);
+
   const handleLogout = async () => {
     await authService.logout();
     window.location.href = '/';
   };
-
+  const handleOpen = () => {
+    setOpen(true);
+  };
   return (
     <AppBar position="static">
+      <FullScreenDialog isOpen={open} setIsOpen={setOpen} />
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -51,30 +56,14 @@ function ResponsiveAppBar({ authService, user }) {
           >
             UoPS Attendance
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {user ? (
-              <Typography
-                sx={{
-                  mr: 1,
-                }}
-                variant="h6"
-              >{`Hi, ${user.email}  <${user.role}>`}</Typography>
-            ) : null}
-          </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}></Box>
           <Box sx={{ p: 0 }}>
             {user?.role === 'admin' ? (
-              <>
-                <Tooltip title="Create Report">
-                  <IconButton color="inherit">
-                    <AssessmentOutlinedIcon fontSize="large" />
-                  </IconButton>
-                </Tooltip>
-                <Tooltip title="Edit/Register Attendance">
-                  <IconButton color="inherit">
-                    <AppRegistrationOutlinedIcon fontSize="large" />
-                  </IconButton>
-                </Tooltip>
-              </>
+              <Tooltip title="Edit/Register Attendance">
+                <IconButton onClick={handleOpen} color="inherit">
+                  <AppRegistrationOutlinedIcon fontSize="large" />
+                </IconButton>
+              </Tooltip>
             ) : null}
             {user ? (
               <Tooltip title="Logout">

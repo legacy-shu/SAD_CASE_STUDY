@@ -20,7 +20,7 @@ export async function login(req, res) {
     return res.status(401).json({ message: 'Invalid user or password' });
   }
   const token = createJwtToken(user.id);
-  res.status(200).json({ token, email, role: user.role });
+  res.status(200).json({ token, email, role: user.role, name: user.name });
 }
 
 export async function me(req, res, next) {

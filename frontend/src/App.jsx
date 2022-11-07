@@ -4,6 +4,8 @@ import Login from './components/pages/Login';
 import AdminDetail from './components/pages/AdminDetail';
 import StudentBoard from './components/pages/StudentBoard';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import { Container } from '@mui/system';
 import { useState, useEffect } from 'react';
 import Protected from './components/protected/Protected';
@@ -32,6 +34,7 @@ function App({ attendanceService, authService }) {
         authService={authService}
         user={user}
       ></Nav>
+      <Header user={user} />
       <Router>
         <Routes>
           <Route path="/" element={<Rolebased user={user} />}></Route>
@@ -76,6 +79,7 @@ function App({ attendanceService, authService }) {
           ></Route>
         </Routes>
       </Router>
+      <Footer />
     </Container>
   );
 }

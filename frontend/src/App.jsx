@@ -3,6 +3,7 @@ import AdminBoard from './components/pages/AdminBoard';
 import Login from './components/pages/Login';
 import AdminDetail from './components/pages/AdminDetail';
 import StudentBoard from './components/pages/StudentBoard';
+import StudentBoardDetail from './components/pages/StudentBoardDetail';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -62,6 +63,18 @@ function App({ attendanceService, authService }) {
             element={
               <Protected user={user}>
                 <StudentBoard
+                  user={user}
+                  attendanceService={attendanceService}
+                />
+              </Protected>
+            }
+          ></Route>
+
+          <Route
+            path="/attendance/:id"
+            element={
+              <Protected user={user}>
+                <StudentBoardDetail
                   user={user}
                   attendanceService={attendanceService}
                 />

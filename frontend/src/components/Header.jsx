@@ -29,7 +29,7 @@ export default function StickyFooter({ user }) {
                 mr: 1,
               }}
               variant="h6"
-            >{`Hi, ${user.name}! You are logged as ${user.role}`}</Typography>
+            >{`\u2728 Hi ${user.name}, You are logged in as ${user.role}`}</Typography>
           </Container>
         </Box>
       ) : null}

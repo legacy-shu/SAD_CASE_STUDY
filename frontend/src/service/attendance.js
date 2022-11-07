@@ -2,7 +2,6 @@ export default class AttendanceService {
   constructor(http, tokenStorage) {
     this.http = http;
     this.tokenStorage = tokenStorage;
-    this.sessionId = null;
   }
   async getSessions() {
     return this.http.fetch('/sessions', {
@@ -11,7 +10,6 @@ export default class AttendanceService {
     });
   }
   async getSession(sessionId) {
-    this.sessionId = sessionId;
     return this.http.fetch(`/sessions/${sessionId}`, {
       method: 'GET',
       headers: this.getHeaders(),
@@ -23,8 +21,14 @@ export default class AttendanceService {
       headers: this.getHeaders(),
     });
   }
-  async getCurrentSession() {
+  async getOpenedSessions() {
     return this.http.fetch('/attendance', {
+      method: 'GET',
+      headers: this.getHeaders(),
+    });
+  }
+  async getOpenedSessionById(sessionId) {
+    return this.http.fetch(`/attendance/${sessionId}`, {
       method: 'GET',
       headers: this.getHeaders(),
     });

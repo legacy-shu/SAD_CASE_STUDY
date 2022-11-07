@@ -6,10 +6,9 @@ import { Container } from '@mui/material';
 const Session = ({ attendanceService }) => {
   const { id } = useParams();
   const [session, setSession] = useState();
-  const [passcode, setPasscode] = useState();
 
   const openSession = (data) => {
-    setPasscode(data.passcode);
+    setSession(data);
   };
 
   useEffect(() => {
@@ -19,6 +18,7 @@ const Session = ({ attendanceService }) => {
     }
     fetchData();
   }, []);
+  
 
   return (
     <Container fixed>
@@ -27,7 +27,6 @@ const Session = ({ attendanceService }) => {
           session={session}
           openedSession={true}
           openSession={openSession}
-          passcode={passcode}
           attendanceService={attendanceService}
         ></MUICard>
       ) : null}

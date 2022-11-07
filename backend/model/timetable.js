@@ -47,10 +47,10 @@ export async function getSession(id) {
     console.error(error);
   }
 }
-export async function getOpenedSession() {
-  const date = moment().format('YYYY-MM-DD')
+export async function getOpenedSessions() {
+  const date = moment().format('YYYY-MM-DD');
   try {
-    return await timetable.findOne({ date:date, isOpened: true });
+    return await timetable.find({ date: date, isOpened: true });
   } catch (error) {
     console.error(error);
   }

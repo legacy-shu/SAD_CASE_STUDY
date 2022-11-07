@@ -11,47 +11,53 @@ const MUICard = ({
   session,
   openedSession,
   openSession,
-  passcode,
   attendanceService,
 }) => {
   return (
     <Card>
       {openedSession ? (
         <CardHeader
-          avatar={
+          title={session?.passcode ? `PASSCODE : ${session?.passcode}` : null}
+          titleTypographyProps={{ variant: 'h5', color: 'red' }}
+          action={
             <Switch
               openSession={openSession}
               attendanceService={attendanceService}
+              passcode={session?.passcode}
             />
           }
-          title={passcode ? `PASSCODE : ${passcode}` : null}
-          titleTypographyProps={{ variant: 'h5', color: 'red' }}
         ></CardHeader>
       ) : null}
       <CardMedia
         component="img"
         height="140"
-        image={`https://picsum.photos/200/300?random=${session._id}`}
+        image={`https://picsum.photos/200/300?random=${session?._id}`}
         alt="unsplash image"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {session.date}
+          {session?.date}
         </Typography>
         <Typography gutterBottom variant="h6" component="div">
-          {session.activity_name}
+          {session?.activity_name}
         </Typography>
         <Typography gutterBottom variant="body" component="div">
-          {session.time}
+          {session?.time}
         </Typography>
         <Typography gutterBottom variant="body" component="div">
-          {session.location}
+          {session?.location}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {session.staff_members[0].name}
+        <Typography
+          gutterBottom
+          variant="body"
+          color="text.secondary"
+          component="div"
+        >
+          {session?.staff_members?.[0]?.name}
         </Typography>
-        <Typography variant="body" color="text.secondary">
-          {session.isOpened}
+
+        <Typography gutterBottom variant="body2" color="red" component="div">
+          {session?.passcode}
         </Typography>
       </CardContent>
     </Card>

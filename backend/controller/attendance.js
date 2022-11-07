@@ -1,7 +1,17 @@
 import * as timetable from '../model/timetable.js';
 
-export async function getOpenedSession(req, res, next) {
-  const data = await timetable.getOpenedSession();
+export async function getOpenedSessions(req, res, next) {
+  const data = await timetable.getOpenedSessions();
+  if (data) {
+    res.status(200).json(data);
+  } else {
+    res.status(404).json({ message: 'Something went wrong' });
+  }
+}
+
+export async function getOpenedSessionById(req, res, next) {
+  const id = req.params.id;
+  const data = await timetable.getSession(id);
   if (data) {
     res.status(200).json(data);
   } else {

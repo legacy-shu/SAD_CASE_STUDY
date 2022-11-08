@@ -27,19 +27,29 @@ export default function NativeSelectDemo({ attendanceService, getStudents }) {
     }
     fetchData();
   }, [id]);
+
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel variant="standard"></InputLabel>
+        <InputLabel
+          sx={{
+            color: 'inherit',
+          }}
+          variant="standard"
+        >
+          Select session
+        </InputLabel>
         <NativeSelect
           onChange={handleChange}
           sx={{
             color: 'inherit',
           }}
         >
+          <option aria-label="None" value="" />
+
           {sessions.map((session) => (
             <option key={session._id} value={`${session._id}`}>
-              {`${session.date} ${session.activity_name}`}
+              {`${session.date} ${session.time} ${session.activity_name}`}
             </option>
           ))}
         </NativeSelect>

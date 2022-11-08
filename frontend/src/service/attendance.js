@@ -39,6 +39,13 @@ export default class AttendanceService {
       headers: this.getHeaders(),
     });
   }
+  async updateStudentAttendance(students, id) {
+    return this.http.fetch(`/attendance`, {
+      method: 'PUT',
+      headers: this.getHeaders(),
+      body: JSON.stringify({ students, id }),
+    });
+  }
   async registerAttendance(passcode, email) {
     return this.http.fetch(`/attendance`, {
       method: 'POST',

@@ -7,25 +7,27 @@ const columns = [
   { field: 'email', headerName: 'Email', width: 300 },
 ];
 
-export default function DataTable({ students }) {
-  const [selectionModel, setSelectionModel] = React.useState(() =>
-    students.filter((s) => s.attendance === true).map((s) => s.id)
-  );
+export default function DataTable({ students, setStudents }) {
+  const [selectionModel, setSelectionModel] = React.useState(students);
   const [selectedRows, setSelectedRows] = React.useState([]);
-
+  React.useEffect(() => {
+    setSelectionModel(() =>
+      students.filter((s) => s.attendance === true).map((s) => s.id)
+    );
+  }, [students]);
   return (
-    <div style={{ height: 2000, width: '100%' }}>
+    <div style={{ height: 1000, width: '100%' }}>
       <DataGrid
+        checkboxSelection
         rows={students}
         columns={columns}
         selectionModel={selectionModel}
-        checkboxSelection
-        // onSelectionModelChange={(e) => {
-        //   setSelectionModel(e);
-        //   const selectedIDs = new Set(e);
-        //   const selectedRows = students.filter((s) => selectedIDs.has(s.id));
-        //   setSelectedRows(selectedRows);
-        // }}
+        onSelectionModelChange={(e) => {
+          setSelectionModel(e);
+          const selectedIDs = new Set(e);
+          const selectedRows = students.filter((s) => selectedIDs.has(s.id));
+          setSelectedRows(selectedRows);
+        }}
       />
     </div>
   );

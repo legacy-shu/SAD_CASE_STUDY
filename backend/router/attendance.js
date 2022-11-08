@@ -17,6 +17,7 @@ const validateRegister = [
 
 router.get('/', attendanceController.getOpenedSessions);
 router.get('/:id', attendanceController.getOpenedSessionById);
+router.put('/', attendanceController.updateStudentAttendance);
 router.post('/', validateRegister, attendanceController.registerAttendance);
 
 export default router;

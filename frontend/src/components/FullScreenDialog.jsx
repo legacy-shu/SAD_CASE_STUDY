@@ -23,18 +23,20 @@ export default function FullScreenDialog({
   setIsOpen,
   attendanceService,
 }) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
   const [students, setStudents] = React.useState([]);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+
   const handleClose = () => {
     setIsOpen(false);
   };
   const getStudents = (students) => {
     setStudents(students);
   };
+  //When Fullscreen close then reset students data
+  React.useEffect(() => {
+    return () => {
+      setStudents([]);
+    };
+  }, [isOpen]);
   return (
     <div>
       <Dialog
@@ -69,7 +71,7 @@ export default function FullScreenDialog({
             </Box>
           </Toolbar>
         </AppBar>
-        <DataTable students={students}></DataTable>
+        <DataTable students={students} setStudents={setStudents}></DataTable>
       </Dialog>
     </div>
   );

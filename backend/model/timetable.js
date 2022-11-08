@@ -89,6 +89,20 @@ export async function openSession(id, openedSession) {
     console.error(error);
   }
 }
+export async function updateStudentAttendance(students, id) {
+  try {
+    const session = await timetable.findByIdAndUpdate(
+      id,
+      {
+        students: students,
+      },
+      { new: true }
+    );
+    return session;
+  } catch (error) {
+    console.error(error);
+  }
+}
 export async function registerAttendance(passcode, email) {
   try {
     const session = await timetable.findOneAndUpdate(

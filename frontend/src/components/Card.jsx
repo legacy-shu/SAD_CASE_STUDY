@@ -12,6 +12,7 @@ const MUICard = ({
   openedSession,
   openSession,
   attendanceService,
+  user,
 }) => {
   return (
     <Card>
@@ -56,9 +57,11 @@ const MUICard = ({
           {session?.staff_members?.[0]?.name}
         </Typography>
 
-        <Typography gutterBottom variant="body2" color="red" component="div">
-          {session?.passcode}
-        </Typography>
+        {user?.role === 'admin' ? (
+          <Typography gutterBottom variant="body2" color="red" component="div">
+            {session?.passcode}
+          </Typography>
+        ) : null}
       </CardContent>
     </Card>
   );

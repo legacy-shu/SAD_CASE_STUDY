@@ -3,7 +3,7 @@ import MUICard from '../Card';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Box } from '@mui/material';
 
-const AdminBoard = ({ attendanceService }) => {
+const AdminBoard = ({ attendanceService, user }) => {
   const [sessions, setSessions] = useState([]);
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const AdminBoard = ({ attendanceService }) => {
                 to={`/sessions/${session._id}`}
               >
                 <MUICard
+                  user={user}
                   key={session._id}
                   session={session}
                   size={'470px'}

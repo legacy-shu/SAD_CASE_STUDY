@@ -44,7 +44,7 @@ function App({ attendanceService, authService }) {
             path="/sessions"
             element={
               <Protected user={user}>
-                <AdminBoard attendanceService={attendanceService} />
+                <AdminBoard user={user} attendanceService={attendanceService} />
               </Protected>
             }
           ></Route>

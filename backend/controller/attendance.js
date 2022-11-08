@@ -1,5 +1,6 @@
 import * as timetable from '../model/timetable.js';
 
+// gets a list of opened sessions from the database and returns as JSON
 export async function getOpenedSessions(req, res, next) {
   const data = await timetable.getOpenedSessions();
   if (data) {

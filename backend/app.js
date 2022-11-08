@@ -5,8 +5,7 @@ import authRouter from './router/auth.js';
 import mongoose from 'mongoose';
 
 const app = express();
-const MONGO_URI =
-  'mongodb+srv://admin:AgmojWsMRWAL4eBk@mongodbtutorial.qhhmeph.mongodb.net/UoPS?retryWrites=true&w=majority';
+const MONGO_URI = 'mongodb://localhost:27017/UoPS';
 const server = async () => {
   try {
     await mongoose.connect(MONGO_URI);

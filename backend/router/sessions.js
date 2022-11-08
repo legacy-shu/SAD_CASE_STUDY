@@ -3,6 +3,8 @@ import * as sessionsController from '../controller/sessions.js';
 
 const router = express.Router();
 
+router.get('/all', sessionsController.getAllSessions);
+
 router.get('/', sessionsController.getSessions);
 
 router.get('/:id', sessionsController.getSession);

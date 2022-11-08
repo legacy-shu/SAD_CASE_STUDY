@@ -1,14 +1,19 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+import {
+  Button,
+  Dialog,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  Slide,
+  Box,
+  Tooltip,
+} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import Slide from '@mui/material/Slide';
 import DataTable from './Datatable';
-
+import DropDown from './DropDown';
+import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -16,9 +21,19 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 export default function FullScreenDialog({
   isOpen,
   setIsOpen,
+  attendanceService,
 }) {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [students, setStudents] = React.useState([]);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
   const handleClose = () => {
     setIsOpen(false);
+  };
+  const getStudents = (students) => {
+    setStudents(students);
   };
   return (
     <div>
@@ -41,12 +56,20 @@ export default function FullScreenDialog({
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
               Students
             </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
-              save
-            </Button>
+            <Box sx={{ flexGrow: 0, display: 'flex' }}>
+              <DropDown
+                attendanceService={attendanceService}
+                getStudents={getStudents}
+              ></DropDown>
+              <Tooltip title="Save">
+                <IconButton onClick={handleClose} color="inherit">
+                  <SaveOutlinedIcon fontSize="large" />
+                </IconButton>
+              </Tooltip>
+            </Box>
           </Toolbar>
         </AppBar>
-        <DataTable></DataTable>
+        <DataTable students={students}></DataTable>
       </Dialog>
     </div>
   );

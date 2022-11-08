@@ -11,7 +11,7 @@ import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import AppRegistrationOutlinedIcon from '@mui/icons-material/AppRegistrationOutlined';
 import FullScreenDialog from './FullScreenDialog';
 
-function ResponsiveAppBar({ authService, user }) {
+function ResponsiveAppBar({ attendanceService, authService, user }) {
   const [open, setOpen] = React.useState(false);
 
   const handleLogout = async () => {
@@ -23,7 +23,11 @@ function ResponsiveAppBar({ authService, user }) {
   };
   return (
     <AppBar position="static">
-      <FullScreenDialog isOpen={open} setIsOpen={setOpen} />
+      <FullScreenDialog
+        attendanceService={attendanceService}
+        isOpen={open}
+        setIsOpen={setOpen}
+      />
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

@@ -3,6 +3,12 @@ export default class AttendanceService {
     this.http = http;
     this.tokenStorage = tokenStorage;
   }
+  async getAllSessions() {
+    return this.http.fetch('/sessions/all', {
+      method: 'GET',
+      headers: this.getHeaders(),
+    });
+  }
   async getSessions() {
     return this.http.fetch('/sessions', {
       method: 'GET',

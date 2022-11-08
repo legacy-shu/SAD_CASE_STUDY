@@ -13,7 +13,8 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 import DataTable from './Datatable';
 import DropDown from './DropDown';
-import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -24,19 +25,59 @@ export default function FullScreenDialog({
   attendanceService,
 }) {
   const [students, setStudents] = React.useState([]);
+  const [selectedIDs, setSelectedIDs] = React.useState([]);
+  const [sessionId, setSessionId] = React.useState([]);
 
+  const generateReport = () => {
+    const selectedall = students.map((s) => {
+      if (selectedIDs.has(s.id)) {
+        s.attendance = true;
+      }
+      return s;
+    });
+  };
+  
+  //When close fullscreen, save student attendance selected
   const handleClose = () => {
+    const selectedall = students.map((s) => {
+      if (selectedIDs && selectedIDs.has(s.id)) {
+        s.attendance = true;
+      } else {
+        s.attendance = false;
+      }
+      return s;
+    });
+    async function update() {
+      const data = await attendanceService.updateStudentAttendance(
+        selectedall,
+        sessionId
+      );
+    }
+    console.log(selectedIDs);
+    console.log(selectedall);
+    console.log(sessionId);
+
+    update();
     setIsOpen(false);
   };
-  const getStudents = (students) => {
+
+  //Recieve students data through getStudents function from Dropdown component
+  const getStudents = (students, id) => {
     setStudents(students);
+    setSessionId(id);
   };
+
+  const getSelectedIDs = (selectedIDs) => {
+    setSelectedIDs(selectedIDs);
+  };
+
   //When Fullscreen close then reset students data
   React.useEffect(() => {
     return () => {
       setStudents([]);
     };
   }, [isOpen]);
+
   return (
     <div>
       <Dialog
@@ -64,14 +105,17 @@ export default function FullScreenDialog({
                 getStudents={getStudents}
               ></DropDown>
               <Tooltip title="Save">
-                <IconButton onClick={handleClose} color="inherit">
-                  <SaveOutlinedIcon fontSize="large" />
+                <IconButton onClick={generateReport} color="inherit">
+                  <FileDownloadOutlinedIcon fontSize="large" />
                 </IconButton>
               </Tooltip>
             </Box>
           </Toolbar>
         </AppBar>
-        <DataTable students={students} setStudents={setStudents}></DataTable>
+        <DataTable
+          students={students}
+          getSelectedIDs={getSelectedIDs}
+        ></DataTable>
       </Dialog>
     </div>
   );

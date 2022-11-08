@@ -22,8 +22,7 @@ export default function NativeSelectDemo({ attendanceService, getStudents }) {
   useEffect(() => {
     async function fetchData() {
       const data = await attendanceService.getSession(id);
-      console.log(data);
-      getStudents(data.students);
+      getStudents(data.students, id);
     }
     fetchData();
   }, [id]);

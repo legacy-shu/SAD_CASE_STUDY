@@ -7,7 +7,7 @@ const columns = [
   { field: 'email', headerName: 'Email', width: 300 },
 ];
 
-export default function DataTable({ students, setStudents }) {
+export default function DataTable({ students, getSelectedIDs }) {
   const [selectionModel, setSelectionModel] = React.useState(students);
   const [selectedRows, setSelectedRows] = React.useState([]);
   React.useEffect(() => {
@@ -26,6 +26,7 @@ export default function DataTable({ students, setStudents }) {
           setSelectionModel(e);
           const selectedIDs = new Set(e);
           const selectedRows = students.filter((s) => selectedIDs.has(s.id));
+          getSelectedIDs(selectedIDs);
           setSelectedRows(selectedRows);
         }}
       />

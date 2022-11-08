@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-  Button,
   Dialog,
   AppBar,
   Toolbar,
@@ -14,6 +13,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import DataTable from './Datatable';
 import DropDown from './DropDown';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import { ExportToCsv } from 'export-to-csv';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -24,26 +24,49 @@ export default function FullScreenDialog({
   setIsOpen,
   attendanceService,
 }) {
+  const options = {
+    fieldSeparator: ',',
+    quoteStrings: '"',
+    decimalSeparator: '.',
+    showLabels: true,
+    showTitle: true,
+    title: 'CSV',
+    useTextFile: false,
+    useBom: true,
+    useKeysAsHeaders: true,
+  };
+  const csvExporter = new ExportToCsv(options);
+
   const [students, setStudents] = React.useState([]);
   const [selectedIDs, setSelectedIDs] = React.useState([]);
   const [sessionId, setSessionId] = React.useState([]);
 
   const generateReport = () => {
     const selectedall = students.map((s) => {
-      if (selectedIDs.has(s.id)) {
-        s.attendance = true;
+      if (selectedIDs.size > 0) {
+        if (selectedIDs.has(s.id)) {
+          s.attendance = true;
+        } else {
+          s.attendance = false;
+        }
       }
       return s;
     });
+    console.log(selectedIDs);
+    console.log(selectedall);
+    csvExporter.generateCsv(selectedall);
+
   };
-  
+
   //When close fullscreen, save student attendance selected
   const handleClose = () => {
     const selectedall = students.map((s) => {
-      if (selectedIDs && selectedIDs.has(s.id)) {
-        s.attendance = true;
-      } else {
-        s.attendance = false;
+      if (selectedIDs.size > 0) {
+        if (selectedIDs.has(s.id)) {
+          s.attendance = true;
+        } else {
+          s.attendance = false;
+        }
       }
       return s;
     });

@@ -23,6 +23,7 @@ export default function FullScreenDialog({
   isOpen,
   setIsOpen,
   attendanceService,
+  user,
 }) {
   const options = {
     fieldSeparator: ',',
@@ -55,7 +56,6 @@ export default function FullScreenDialog({
     console.log(selectedIDs);
     console.log(selectedall);
     csvExporter.generateCsv(selectedall);
-
   };
 
   //When close fullscreen, save student attendance selected
@@ -138,6 +138,7 @@ export default function FullScreenDialog({
         <DataTable
           students={students}
           getSelectedIDs={getSelectedIDs}
+          user={user}
         ></DataTable>
       </Dialog>
     </div>

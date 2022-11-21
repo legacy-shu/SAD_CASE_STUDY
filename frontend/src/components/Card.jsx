@@ -57,7 +57,7 @@ const MUICard = ({
           {session?.staff_members?.[0]?.name}
         </Typography>
 
-        {user?.role === 'admin' ? (
+        {user?.role === 'admin' || user?.role === 'tutor' ? (
           <Typography gutterBottom variant="body2" color="red" component="div">
             {session?.passcode}
           </Typography>

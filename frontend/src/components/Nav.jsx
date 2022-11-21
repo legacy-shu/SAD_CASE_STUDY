@@ -24,6 +24,7 @@ function ResponsiveAppBar({ attendanceService, authService, user }) {
   return (
     <AppBar position="static">
       <FullScreenDialog
+        user={user}
         attendanceService={attendanceService}
         isOpen={open}
         setIsOpen={setOpen}
@@ -62,7 +63,7 @@ function ResponsiveAppBar({ attendanceService, authService, user }) {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}></Box>
           <Box sx={{ p: 0 }}>
-            {user?.role === 'admin' ? (
+            {user?.role === 'admin' || user?.role === 'tutor' ? (
               <Tooltip title="Edit/Register Attendance">
                 <IconButton onClick={handleOpen} color="inherit">
                   <AppRegistrationOutlinedIcon fontSize="large" />

@@ -1,1 +1,46 @@
 # SAD_CASE_STUDY
+## Usage Demo Project
+### MongoDB(NOTE:Needs to install MongoDB)
+* Open a terminal and move into the directory where you downloaded it
+* Example:
+```
+$ cd ~/Download/SAD_CASE_STUDY-main
+```
+* Enter belows command for importing timetable data:
+```
+~/Download/SAD_CASE_STUDY-main
+$ mongoimport -d UoPS -c timetable --drop --file ./timetable.json --jsonArray
+```
+* Enter belows command for importing user data:
+```
+~/Download/SAD_CASE_STUDY-main
+$ mongoimport -d UoPS -c users --drop --file ./user.json --jsonArray
+```
+### Backend(NOTE:Needs to install Node.JS, NPM)
+* Open a terminal and move into backend directory
+* Example:
+```
+$ cd ~/Download/SAD_CASE_STUDY-main/backend
+```
+* Then install dependancy libraries
+```
+$ npm install
+```
+* Then start server
+```
+$ npm start
+```
+### Frontend
+* Open a terminal and move into backend directory
+* Example:
+```
+$ cd ~/Download/SAD_CASE_STUDY-main/frontend
+```
+* Then install dependancy libraries
+```
+$ npm install
+```
+* Then start server
+```
+$ npm start
+```

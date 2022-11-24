@@ -1,7 +1,4 @@
 [{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebae9"
-  },
   "date": "2022-11-01",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -85,9 +82,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaea"
-  },
   "date": "2022-11-02",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -171,9 +165,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaeb"
-  },
   "date": "2022-11-03",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -257,9 +248,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaec"
-  },
   "date": "2022-11-04",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -343,9 +331,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaed"
-  },
   "date": "2022-11-05",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -429,9 +414,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaee"
-  },
   "date": "2022-11-06",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -515,9 +497,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaef"
-  },
   "date": "2022-11-07",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -601,9 +580,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf0"
-  },
   "date": "2022-11-08",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -687,9 +663,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf1"
-  },
   "date": "2022-11-09",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -773,9 +746,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf2"
-  },
   "date": "2022-11-10",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -859,9 +829,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf3"
-  },
   "date": "2022-11-11",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -945,9 +912,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf4"
-  },
   "date": "2022-11-12",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1031,9 +995,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf5"
-  },
   "date": "2022-11-13",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1117,9 +1078,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf6"
-  },
   "date": "2022-11-14",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1203,9 +1161,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf7"
-  },
   "date": "2022-11-15",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1289,9 +1244,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf8"
-  },
   "date": "2022-11-16",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1375,9 +1327,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaf9"
-  },
   "date": "2022-11-17",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1461,9 +1410,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebafa"
-  },
   "date": "2022-11-18",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1547,9 +1493,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebafb"
-  },
   "date": "2022-11-19",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1633,9 +1576,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebafc"
-  },
   "date": "2022-11-20",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1719,9 +1659,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebafd"
-  },
   "date": "2022-11-21",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1805,9 +1742,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebafe"
-  },
   "date": "2022-11-22",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1891,9 +1825,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebaff"
-  },
   "date": "2022-11-23",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -1977,9 +1908,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb00"
-  },
   "date": "2022-11-24",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2063,9 +1991,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb01"
-  },
   "date": "2022-11-25",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2149,9 +2074,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb02"
-  },
   "date": "2022-11-26",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2235,9 +2157,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb03"
-  },
   "date": "2022-11-27",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2321,9 +2240,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb04"
-  },
   "date": "2022-11-28",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2407,9 +2323,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb05"
-  },
   "date": "2022-11-29",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2493,9 +2406,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb06"
-  },
   "date": "2022-11-30",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2579,9 +2489,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb07"
-  },
   "date": "2022-12-01",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2665,9 +2572,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb08"
-  },
   "date": "2022-12-02",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2751,9 +2655,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb09"
-  },
   "date": "2022-12-03",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2837,9 +2738,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb0a"
-  },
   "date": "2022-12-04",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -2923,9 +2821,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb0b"
-  },
   "date": "2022-12-05",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3009,9 +2904,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb0c"
-  },
   "date": "2022-12-06",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3095,9 +2987,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb0d"
-  },
   "date": "2022-12-07",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3181,9 +3070,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb0e"
-  },
   "date": "2022-12-08",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3267,9 +3153,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb0f"
-  },
   "date": "2022-12-09",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3353,9 +3236,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb10"
-  },
   "date": "2022-12-10",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3439,9 +3319,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb11"
-  },
   "date": "2022-12-11",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3525,9 +3402,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb12"
-  },
   "date": "2022-12-12",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3611,9 +3485,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb13"
-  },
   "date": "2022-12-13",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3697,9 +3568,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb14"
-  },
   "date": "2022-12-14",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3783,9 +3651,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636780f44c139f5bb85ebb15"
-  },
   "date": "2022-12-15",
   "time": "10:00-12:00",
   "activity_name": "Human Factor-Lec",
@@ -3869,9 +3734,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb17"
-  },
   "date": "2022-11-01",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -3955,9 +3817,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb18"
-  },
   "date": "2022-11-02",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4041,9 +3900,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb19"
-  },
   "date": "2022-11-03",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4127,9 +3983,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb1a"
-  },
   "date": "2022-11-04",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4213,9 +4066,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb1b"
-  },
   "date": "2022-11-05",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4299,9 +4149,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb1c"
-  },
   "date": "2022-11-06",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4385,9 +4232,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb1d"
-  },
   "date": "2022-11-07",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4471,9 +4315,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb1e"
-  },
   "date": "2022-11-08",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4557,9 +4398,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb1f"
-  },
   "date": "2022-11-09",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4643,9 +4481,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb20"
-  },
   "date": "2022-11-10",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4729,9 +4564,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb21"
-  },
   "date": "2022-11-11",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4815,9 +4647,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb22"
-  },
   "date": "2022-11-12",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4901,9 +4730,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb23"
-  },
   "date": "2022-11-13",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -4987,9 +4813,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb24"
-  },
   "date": "2022-11-14",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5073,9 +4896,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb25"
-  },
   "date": "2022-11-15",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5159,9 +4979,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb26"
-  },
   "date": "2022-11-16",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5245,9 +5062,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb27"
-  },
   "date": "2022-11-17",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5331,9 +5145,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb28"
-  },
   "date": "2022-11-18",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5417,9 +5228,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb29"
-  },
   "date": "2022-11-19",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5503,9 +5311,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb2a"
-  },
   "date": "2022-11-20",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5589,9 +5394,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb2b"
-  },
   "date": "2022-11-21",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5675,9 +5477,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb2c"
-  },
   "date": "2022-11-22",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5761,9 +5560,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb2d"
-  },
   "date": "2022-11-23",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5847,9 +5643,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb2e"
-  },
   "date": "2022-11-24",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -5933,9 +5726,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb2f"
-  },
   "date": "2022-11-25",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6019,9 +5809,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb30"
-  },
   "date": "2022-11-26",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6105,9 +5892,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb31"
-  },
   "date": "2022-11-27",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6191,9 +5975,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb32"
-  },
   "date": "2022-11-28",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6277,9 +6058,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb33"
-  },
   "date": "2022-11-29",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6363,9 +6141,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb34"
-  },
   "date": "2022-11-30",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6449,9 +6224,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb35"
-  },
   "date": "2022-12-01",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6535,9 +6307,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb36"
-  },
   "date": "2022-12-02",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6621,9 +6390,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb37"
-  },
   "date": "2022-12-03",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6707,9 +6473,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb38"
-  },
   "date": "2022-12-04",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6793,9 +6556,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb39"
-  },
   "date": "2022-12-05",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6879,9 +6639,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb3a"
-  },
   "date": "2022-12-06",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -6965,9 +6722,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb3b"
-  },
   "date": "2022-12-07",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7051,9 +6805,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb3c"
-  },
   "date": "2022-12-08",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7137,9 +6888,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb3d"
-  },
   "date": "2022-12-09",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7223,9 +6971,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb3e"
-  },
   "date": "2022-12-10",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7309,9 +7054,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb3f"
-  },
   "date": "2022-12-11",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7395,9 +7137,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb40"
-  },
   "date": "2022-12-12",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7481,9 +7220,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb41"
-  },
   "date": "2022-12-13",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7567,9 +7303,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb42"
-  },
   "date": "2022-12-14",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7653,9 +7386,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "6367818b4c139f5bb85ebb43"
-  },
   "date": "2022-12-15",
   "time": "13:00-15:00",
   "activity_name": "Human Factor-Lab",
@@ -7739,9 +7469,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb45"
-  },
   "date": "2022-11-01",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -7825,9 +7552,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb46"
-  },
   "date": "2022-11-02",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -7911,9 +7635,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb47"
-  },
   "date": "2022-11-03",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -7997,9 +7718,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb48"
-  },
   "date": "2022-11-04",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8083,9 +7801,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb49"
-  },
   "date": "2022-11-05",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8169,9 +7884,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb4a"
-  },
   "date": "2022-11-06",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8255,9 +7967,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb4b"
-  },
   "date": "2022-11-07",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8341,9 +8050,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb4c"
-  },
   "date": "2022-11-08",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8427,9 +8133,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb4d"
-  },
   "date": "2022-11-09",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8513,9 +8216,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb4e"
-  },
   "date": "2022-11-10",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8599,9 +8299,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb4f"
-  },
   "date": "2022-11-11",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8685,9 +8382,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb50"
-  },
   "date": "2022-11-12",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8771,9 +8465,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb51"
-  },
   "date": "2022-11-13",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8857,9 +8548,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb52"
-  },
   "date": "2022-11-14",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -8943,9 +8631,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb53"
-  },
   "date": "2022-11-15",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9029,9 +8714,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb54"
-  },
   "date": "2022-11-16",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9115,9 +8797,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb55"
-  },
   "date": "2022-11-17",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9201,9 +8880,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb56"
-  },
   "date": "2022-11-18",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9287,9 +8963,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb57"
-  },
   "date": "2022-11-19",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9373,9 +9046,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb58"
-  },
   "date": "2022-11-20",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9459,9 +9129,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb59"
-  },
   "date": "2022-11-21",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9545,9 +9212,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb5a"
-  },
   "date": "2022-11-22",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9631,9 +9295,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb5b"
-  },
   "date": "2022-11-23",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9717,9 +9378,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb5c"
-  },
   "date": "2022-11-24",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9803,9 +9461,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb5d"
-  },
   "date": "2022-11-25",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9889,9 +9544,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb5e"
-  },
   "date": "2022-11-26",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -9975,9 +9627,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb5f"
-  },
   "date": "2022-11-27",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10061,9 +9710,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb60"
-  },
   "date": "2022-11-28",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10147,9 +9793,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb61"
-  },
   "date": "2022-11-29",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10233,9 +9876,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb62"
-  },
   "date": "2022-11-30",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10319,9 +9959,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb63"
-  },
   "date": "2022-12-01",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10405,9 +10042,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb64"
-  },
   "date": "2022-12-02",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10491,9 +10125,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb65"
-  },
   "date": "2022-12-03",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10577,9 +10208,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb66"
-  },
   "date": "2022-12-04",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10663,9 +10291,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb67"
-  },
   "date": "2022-12-05",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10749,9 +10374,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb68"
-  },
   "date": "2022-12-06",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10835,9 +10457,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb69"
-  },
   "date": "2022-12-07",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -10921,9 +10540,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb6a"
-  },
   "date": "2022-12-08",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11007,9 +10623,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb6b"
-  },
   "date": "2022-12-09",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11093,9 +10706,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb6c"
-  },
   "date": "2022-12-10",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11179,9 +10789,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb6d"
-  },
   "date": "2022-12-11",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11265,9 +10872,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb6e"
-  },
   "date": "2022-12-12",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11351,9 +10955,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb6f"
-  },
   "date": "2022-12-13",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11437,9 +11038,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb70"
-  },
   "date": "2022-12-14",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11523,9 +11121,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782454c139f5bb85ebb71"
-  },
   "date": "2022-12-15",
   "time": "14:00-16:00",
   "activity_name": "Software Architecture And Design-Lab",
@@ -11609,9 +11204,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb73"
-  },
   "date": "2022-11-01",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -11695,9 +11287,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb74"
-  },
   "date": "2022-11-02",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -11781,9 +11370,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb75"
-  },
   "date": "2022-11-03",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -11867,9 +11453,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb76"
-  },
   "date": "2022-11-04",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -11953,9 +11536,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb77"
-  },
   "date": "2022-11-05",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12039,9 +11619,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb78"
-  },
   "date": "2022-11-06",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12125,9 +11702,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb79"
-  },
   "date": "2022-11-07",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12211,9 +11785,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb7a"
-  },
   "date": "2022-11-08",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12297,9 +11868,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb7b"
-  },
   "date": "2022-11-09",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12383,9 +11951,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb7c"
-  },
   "date": "2022-11-10",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12469,9 +12034,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb7d"
-  },
   "date": "2022-11-11",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12555,9 +12117,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb7e"
-  },
   "date": "2022-11-12",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12641,9 +12200,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb7f"
-  },
   "date": "2022-11-13",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12727,9 +12283,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb80"
-  },
   "date": "2022-11-14",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12813,9 +12366,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb81"
-  },
   "date": "2022-11-15",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12899,9 +12449,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb82"
-  },
   "date": "2022-11-16",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -12985,9 +12532,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb83"
-  },
   "date": "2022-11-17",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13071,9 +12615,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb84"
-  },
   "date": "2022-11-18",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13157,9 +12698,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb85"
-  },
   "date": "2022-11-19",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13243,9 +12781,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb86"
-  },
   "date": "2022-11-20",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13329,9 +12864,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb87"
-  },
   "date": "2022-11-21",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13415,9 +12947,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb88"
-  },
   "date": "2022-11-22",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13501,9 +13030,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb89"
-  },
   "date": "2022-11-23",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13587,9 +13113,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb8a"
-  },
   "date": "2022-11-24",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13673,9 +13196,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb8b"
-  },
   "date": "2022-11-25",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13759,9 +13279,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb8c"
-  },
   "date": "2022-11-26",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13845,9 +13362,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb8d"
-  },
   "date": "2022-11-27",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -13931,9 +13445,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb8e"
-  },
   "date": "2022-11-28",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14017,9 +13528,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb8f"
-  },
   "date": "2022-11-29",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14103,9 +13611,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb90"
-  },
   "date": "2022-11-30",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14189,9 +13694,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb91"
-  },
   "date": "2022-12-01",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14275,9 +13777,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb92"
-  },
   "date": "2022-12-02",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14361,9 +13860,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb93"
-  },
   "date": "2022-12-03",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14447,9 +13943,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb94"
-  },
   "date": "2022-12-04",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14533,9 +14026,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb95"
-  },
   "date": "2022-12-05",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14619,9 +14109,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb96"
-  },
   "date": "2022-12-06",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14705,9 +14192,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb97"
-  },
   "date": "2022-12-07",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14791,9 +14275,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb98"
-  },
   "date": "2022-12-08",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14877,9 +14358,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb99"
-  },
   "date": "2022-12-09",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -14963,9 +14441,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb9a"
-  },
   "date": "2022-12-10",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -15049,9 +14524,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb9b"
-  },
   "date": "2022-12-11",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -15135,9 +14607,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb9c"
-  },
   "date": "2022-12-12",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -15221,9 +14690,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb9d"
-  },
   "date": "2022-12-13",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -15307,9 +14773,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb9e"
-  },
   "date": "2022-12-14",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",
@@ -15393,9 +14856,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "636782a84c139f5bb85ebb9f"
-  },
   "date": "2022-12-15",
   "time": "17:00-19:00",
   "activity_name": "Software Architecture And Design-Lec",

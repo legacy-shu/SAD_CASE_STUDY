@@ -13,7 +13,7 @@ services:
   mongodb:
     image: library/mongo:latest
     ports:
-      - 27017:27017
+      - 27018:27018
     depends_on:
       - mongoimport
     restart: always

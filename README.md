@@ -6,11 +6,11 @@
 * Open a terminal and move into the directory where you downloaded it
 * Example:
 ```
-$ cd ~/Download/SAD_CASE_STUDY-main
+$ cd ~/Downloads/SAD_CASE_STUDY-main
 ```
 * Enter belows command for building project
 ```
-~/Download/SAD_CASE_STUDY-main
+~/Downloads/SAD_CASE_STUDY-main
 $ docker-compose up -d --bulid
 ```
 ============================================
@@ -19,23 +19,23 @@ $ docker-compose up -d --bulid
 * Open a terminal and move into the directory where you downloaded it
 * Example:
 ```
-$ cd ~/Download/SAD_CASE_STUDY-main
+$ cd ~/Downloads/SAD_CASE_STUDY-main
 ```
 * Enter belows command for importing timetable data:
 ```
-~/Download/SAD_CASE_STUDY-main
+~/Downloads/SAD_CASE_STUDY-main
 $ mongoimport -d UoPS -c timetable --drop --file ./timetable.json --jsonArray
 ```
 * Enter belows command for importing user data:
 ```
-~/Download/SAD_CASE_STUDY-main
+~/Downloads/SAD_CASE_STUDY-main
 $ mongoimport -d UoPS -c users --drop --file ./user.json --jsonArray
 ```
 ### Backend(NOTE:Needs to install Node.JS, NPM)
 * Open a terminal and move into backend directory
 * Example:
 ```
-$ cd ~/Download/SAD_CASE_STUDY-main/backend
+$ cd ~/Downloads/SAD_CASE_STUDY-main/backend
 ```
 * Then install dependancy libraries
 ```
@@ -49,7 +49,7 @@ $ npm start
 * Open a terminal and move into backend directory
 * Example:
 ```
-$ cd ~/Download/SAD_CASE_STUDY-main/frontend
+$ cd ~/Downloads/SAD_CASE_STUDY-main/frontend
 ```
 * Then install dependancy libraries
 ```

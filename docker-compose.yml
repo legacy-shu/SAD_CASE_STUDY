@@ -7,13 +7,13 @@ services:
       - ./timetable.json:/src/data/timetable.json
       - ./user.json:/src/data/user.json
     command: sh -c "mongoimport --host mongodb -d UoPS
-     -c timetable --drop --file /src/data/timetable.json --jsonArray && 
-     mongoimport --host mongodb -d UoPS -c users --drop 
-     --file /src/data/user.json --jsonArray"
+      -c timetable --drop --file /src/data/timetable.json --jsonArray &&
+      mongoimport --host mongodb -d UoPS -c users --drop
+      --file /src/data/user.json --jsonArray"
   mongodb:
     image: library/mongo:latest
     ports:
-      - 27018:27018
+      - 27018:27017
     depends_on:
       - mongoimport
     restart: always

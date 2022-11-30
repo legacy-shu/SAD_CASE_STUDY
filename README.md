@@ -1,5 +1,20 @@
 # SAD_CASE_STUDY
 ## Usage Demo Project
+============================================
+### Simple way is this
+### Docker(NOTE:Needs to install Docker)
+* Open a terminal and move into the directory where you downloaded it
+* Example:
+```
+$ cd ~/Download/SAD_CASE_STUDY-main
+```
+* Enter belows command for building project
+```
+~/Download/SAD_CASE_STUDY-main
+$ docker-compose up -d --bulid
+```
+============================================
+
 ### MongoDB(NOTE:Needs to install MongoDB)
 * Open a terminal and move into the directory where you downloaded it
 * Example:

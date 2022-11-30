@@ -11,7 +11,6 @@ export const isAuth = async (req, res, next) => {
 
   const token = authHeader.split(' ')[1];
 
-  //TODO: Refactory for secure!
   const jwtSecretKey = '7!eTNrZa6WE7TstUtMeICO4RQt$bJ$22';
 
   jwt.verify(token, jwtSecretKey, async (error, decoded) => {

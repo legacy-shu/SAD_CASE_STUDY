@@ -48,7 +48,9 @@ export async function getSession(id) {
   }
 }
 export async function getOpenedSessions() {
-  const date = moment().format('YYYY-MM-DD');
+  //const date = moment().format('YYYY-MM-DD');
+  //for the test. It should be commented out and The above code have to be activated
+  const date = "2022-12-01"
   try {
     return await timetable.find({ date: date, isOpened: true });
   } catch (error) {
@@ -56,6 +58,8 @@ export async function getOpenedSessions() {
   }
 }
 export async function getSessions(date) {
+  //for the test. It should be commented out
+  date = "2022-12-01"
   try {
     return await timetable.find({ date: date });
   } catch (error) {

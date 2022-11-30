@@ -3,6 +3,7 @@ import sessionRouter from './router/sessions.js';
 import attendanceRouter from './router/attendance.js';
 import authRouter from './router/auth.js';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 const app = express();
 const MONGO_URI = 'mongodb://localhost:27017/UoPS';
@@ -12,6 +13,7 @@ const server = async () => {
     console.log('DB Connected');
 
     app.use(express.json());
+    app.use(cors());
     app.use('/attendance', attendanceRouter);
     app.use('/sessions', sessionRouter);
     app.use('/auth', authRouter);

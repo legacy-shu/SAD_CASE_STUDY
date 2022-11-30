@@ -3,7 +3,6 @@ import bcrypt from 'bcrypt';
 import {} from 'express-async-errors';
 import * as userRepository from '../model/userRepository.js';
 
-//TODO: Refactory for secure!
 const jwtSecretKey = '7!eTNrZa6WE7TstUtMeICO4RQt$bJ$22';
 const jwtExpiresInDays = '1d';
 const bcryptSaltRounds = 12;

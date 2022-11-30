@@ -7,6 +7,8 @@ import cors from 'cors';
 
 const app = express();
 const MONGO_URI = 'mongodb://mongodb:27017/UoPS';
+//const MONGO_URI = 'mongodb://127.0.0.1:27017/UoPS';
+
 const server = async () => {
   try {
     await mongoose.connect(MONGO_URI);

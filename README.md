@@ -2,6 +2,12 @@
 ## Usage Demo Project
 ============================================
 ### Simple way is this
+* Users' ID: 
+  - Admin (t5032913@uops.ac.uk)
+  - Tutor (t5032912@uops.ac.uk)
+  - Student (c1032912@uops.ac.uk)
+* Password: abcd1234
+
 ### Docker(NOTE:Needs to install Docker)
 * Open a terminal and move into the directory where you downloaded it
 * Example:
@@ -32,6 +38,11 @@ $ mongoimport -d UoPS -c timetable --drop --file ./timetable.json --jsonArray
 $ mongoimport -d UoPS -c users --drop --file ./user.json --jsonArray
 ```
 ### Backend(NOTE:Needs to install Node.JS, NPM)
+* When you use local mongodb you should use correct connect URL 
+```diff
++ 'mongodb://127.0.0.1:27017/UoPS'
+- 'mongodb://mongodb:27017/UoPS'
+```
 * Open a terminal and move into backend directory
 * Example:
 ```

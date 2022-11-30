@@ -17,7 +17,7 @@ $ cd ~/Downloads/SAD_CASE_STUDY-main
 * Enter belows command for building project
 ```
 ~/Downloads/SAD_CASE_STUDY-main
-$ docker-compose up -d --bulid
+$ docker-compose up -d --build
 ```
 ============================================
 

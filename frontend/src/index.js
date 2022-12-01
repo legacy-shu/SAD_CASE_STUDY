@@ -8,8 +8,10 @@ import AuthService from './service/auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const tokenStorage = new TokenStorage();
-const httpClient = new HttpClient('http://localhost:8080');
+const httpClient = new HttpClient('http://localhost:8000');
 const attendanceService = new AttendanceService(httpClient, tokenStorage);
 const authService = new AuthService(httpClient, tokenStorage);
 
-root.render(<App attendanceService={attendanceService} authService={authService} />);
+root.render(
+  <App attendanceService={attendanceService} authService={authService} />
+);

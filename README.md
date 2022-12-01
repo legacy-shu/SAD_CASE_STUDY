@@ -19,6 +19,10 @@ $ cd ~/Downloads/SAD_CASE_STUDY-main
 ~/Downloads/SAD_CASE_STUDY-main
 $ docker-compose up -d --build
 ```
+* Open browser
+```
+http://localhost:3000
+```
 * Delete container
 ```
 ~/Downloads/SAD_CASE_STUDY-main

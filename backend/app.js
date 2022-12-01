@@ -28,7 +28,7 @@ const server = async () => {
       res.sendStatus(500);
     });
 
-    app.listen(8080, () => {
+    app.listen(8000, () => {
       console.log('Server listning on port 8080');
     });
   } catch (error) {

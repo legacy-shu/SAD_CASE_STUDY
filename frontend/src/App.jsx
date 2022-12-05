@@ -23,7 +23,9 @@ function App({ attendanceService, authService }) {
   useEffect(() => {
     async function fetchData() {
       const user = await authService.me();
-      setUser(user);
+      if(user.token){
+        setUser(user);
+      }
     }
     fetchData();
   }, []);

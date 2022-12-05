@@ -10,7 +10,7 @@ const bcryptSaltRounds = 12;
 export async function login(req, res) {
   const { email, password } = req.body;
   const user = await userRepository.findByEmail(email);
-  console.log(`user:${user.email}`);
+  //console.log(`user:${user.email}`);
   if (!user) {
     return res.status(401).json({ message: 'Invalid user or password' });
   }

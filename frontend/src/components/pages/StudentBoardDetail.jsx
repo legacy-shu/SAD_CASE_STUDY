@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, TextField, Box, Button } from '@mui/material';
-
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+import Stack from '@mui/material/Stack';
 import MUICard from '../Card';
 
 const StudentAttendance = ({ attendanceService, user }) => {
   const [session, setSession] = useState([]);
+  const [error, setError] = useState();
   const { id } = useParams();
 
   const handleSubmit = async (event) => {
@@ -15,8 +18,15 @@ const StudentAttendance = ({ attendanceService, user }) => {
       data.get('passcode'),
       user.email
     );
+    setError(null);
     if (registered) {
       setSession(registered);
+    }
+    if (typeof registered.message === 'string') {
+      setError(registered.message);
+    }
+    if (typeof registered.message === 'object') {
+      setError(registered.message[0].msg);
     }
   };
 
@@ -30,6 +40,14 @@ const StudentAttendance = ({ attendanceService, user }) => {
 
   return (
     <Container fixed>
+      {error ? (
+        <Stack sx={{ width: '100%' }} spacing={2}>
+          <Alert severity="error">
+            <AlertTitle>Error</AlertTitle>
+            {error}
+          </Alert>
+        </Stack>
+      ) : null}
       {!session?.students?.filter((s) => s.email === user.email)?.[0]
         ?.attendance ? (
         <Box

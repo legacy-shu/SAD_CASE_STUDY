@@ -5,7 +5,10 @@ import authRouter from "./router/auth.js";
 import mongoose from "mongoose";
 import cors from "cors";
 import path from "path";
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const app = express();
 const MONGO_URI =
   "mongodb+srv://lundaljung:dOSzMl88gH7e0ep5@cluster0.ooy7u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/UoPS";

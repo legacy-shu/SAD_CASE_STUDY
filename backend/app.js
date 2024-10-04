@@ -18,7 +18,6 @@ const server = async () => {
     await mongoose.connect(MONGO_URI);
     console.log("DB Connected");
 
-    app.use(express.json());
     app.use(
       cors({
         origin: "*", // 프론트엔드 주소
@@ -26,15 +25,18 @@ const server = async () => {
         allowedHeaders: ["Authorization", "Content-Type"], // 허용할 헤더 지정
       })
     );
-    
-    app.use(express.static(path.join(__dirname, "../frontend/build")));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-    });
+
+    app.use(express.json());
 
     app.use("/attendance", attendanceRouter);
     app.use("/sessions", sessionRouter);
     app.use("/auth", authRouter);
+
+    //리액트 정적파일 서빙
+    app.use(express.static(path.join(__dirname, "../frontend/build")));
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+    });
 
     app.use((req, res, next) => {
       res.sendStatus(404);

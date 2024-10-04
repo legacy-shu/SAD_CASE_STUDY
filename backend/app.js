@@ -26,7 +26,7 @@ const server = async () => {
     app.use(express.json());
     app.use(
       cors({
-        origin: "http://ec2-43-202-3-247.ap-northeast-2.compute.amazonaws.com", // 프론트엔드 주소
+        origin: "*", // 프론트엔드 주소
         credentials: true, // 쿠키 및 인증 정보 허용
         allowedHeaders: ["Authorization", "Content-Type"], // 허용할 헤더 지정
       })

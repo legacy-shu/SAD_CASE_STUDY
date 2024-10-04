@@ -4,6 +4,7 @@ import attendanceRouter from "./router/attendance.js";
 import authRouter from "./router/auth.js";
 import mongoose from "mongoose";
 import cors from "cors";
+import path from "path";
 
 const app = express();
 const MONGO_URI =

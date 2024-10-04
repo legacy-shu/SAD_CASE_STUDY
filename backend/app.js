@@ -5,7 +5,7 @@ import authRouter from "./router/auth.js";
 import mongoose from "mongoose";
 import cors from "cors";
 import path from "path";
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,7 +24,13 @@ const server = async () => {
     });
 
     app.use(express.json());
-    app.use(cors());
+    app.use(
+      cors({
+        origin: "http://ec2-43-202-3-247.ap-northeast-2.compute.amazonaws.com", // 프론트엔드 주소
+        credentials: true, // 쿠키 및 인증 정보 허용
+        allowedHeaders: ["Authorization", "Content-Type"], // 허용할 헤더 지정
+      })
+    );
     app.use("/attendance", attendanceRouter);
     app.use("/sessions", sessionRouter);
     app.use("/auth", authRouter);
